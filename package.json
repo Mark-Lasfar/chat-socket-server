@@ -1,0 +1,37 @@
+{
+  "name": "chat-socket-server",
+  "version": "1.0.0",
+  "description": "Socket.io chat server with MongoDB",
+  "main": "dist/socket.js",
+  "scripts": {
+    "dev": "ts-node src/socket.ts",
+    "build": "tsc",
+    "start": "node dist/socket.js"
+  },
+  "keywords": [
+    "chat",
+    "socket.io",
+    "typescript",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^9.0.0",
+    "react-hook-form": "^7.66.1",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^24.10.1",
+    "@types/socket.io": "^3.0.1",
+    "@types/socket.io-client": "^1.4.36",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

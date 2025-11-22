@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                 // نسخة JS الناتجة
+    "module": "CommonJS",               // Node يحتاج CommonJS
+    "strict": true,                     // تمكين التحقق الصارم
+    "esModuleInterop": true,            // استيراد مكتبات CommonJS بسهولة
+    "skipLibCheck": true,               // تجاهل أخطاء أنواع المكتبات
+    "outDir": "dist",                   // مجلد البناء النهائي
+    "rootDir": "src",                   // مجلد المشروع الأصلي
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,          // إذا تستخدم JSON imports
+    "baseUrl": "src",                   // لتسهيل aliases
+    "paths": {
+      "@/*": ["*"]                      // @/ يشير إلى src/
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]   // استبعاد مجلدات غير ضرورية
+}
