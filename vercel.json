@@ -1,9 +1,16 @@
 {
   "version": 2,
   "builds": [
-    { "src": "dist/socket.js", "use": "@vercel/node" }
+    {
+      "src": "dist/socket.js",
+      "use": "@vercel/node"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "dist/socket.js" }
+    {
+      "src": "/(.*)",
+      "dest": "dist/socket.js"
+    }
   ]
 }
+
